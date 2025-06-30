@@ -1,0 +1,200 @@
+/*corps et fond du site */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+header {
+    background-color: #db7500;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Carrés avec marques partenaires*/
+.carre {
+    width: 40%;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.carre img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.blackbr { 
+    background-color: #4d4a4a7e;
+    padding: 40px;
+}
+
+img {
+    width: 40%
+}
+
+/*galeries d'images */
+.container {
+    text-align: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.gallerie img {
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.gallerie img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/*Galerie d'employés*/
+#equipe {
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.galerie-employes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.employe {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.employe:hover {
+  transform: translateY(-5px);
+}
+
+.employe img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.employe h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.employe p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+
+/*formulaire de contact*/
+#contact {
+  background-color: #f8f9ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #004080;
+  box-shadow: 0 0 8px rgba(0, 64, 128, 0.2);
+  outline: none;
+}
+
+.contact-form button {
+  background-color: #010e1b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+/*animation bouton*/
+.contact-form button:hover {
+    background-color: #db7500;
+}
